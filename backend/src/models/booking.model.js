@@ -4,7 +4,7 @@ const bookingSchema = new Schema(
     {
         rideId:{
             type: mongoose.Schema.Types.ObjectId,
-            ref: "RideOffer",
+            ref: "Ride",
             required: true,
         },
         userId:{
