@@ -23,19 +23,13 @@ const rideSchema = new Schema(
             type: String,
             required: true,
         },
+        source: {
+            type: String,
+            required: true,
+        },
         destination: {
-            address: {
-              type: String,
-              required: true,
-            },
-            lat: {
-              type: Number,
-              required: true,
-            },
-            lng: {
-              type: Number,
-              required: true,
-            },
+            type: String,
+            required: true,
         },
     },
     {

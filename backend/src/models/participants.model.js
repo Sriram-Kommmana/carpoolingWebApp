@@ -25,4 +25,4 @@ const participantSchema = new Schema(
         timestamps: true,
     }
 )
-model.exports = mongoose.model("Participant", participantSchema)
+module.exports = mongoose.model("Participant", participantSchema)
