@@ -12,7 +12,12 @@ app.use(express.urlencoded({extended: true, limit:"16kb"}))
 app.use(express.static("public"))
 app.use(cookieParser())
 
+import userRouter from './routes/user.routes.js'
+import rideRouter from './routes/ride.routes.js'
+import bookingRouter from './routes/booking.routes.js'
 
-
+app.use('/api/v1/user', userRouter)
+app.use('/api/v1/ride', rideRouter) 
+app.use('/api/v1/auth', bookingRouter)
 
 export {app}
